@@ -8,6 +8,7 @@
 with open("task3.txt", "r", encoding="utf-8") as read_file:
     content = read_file.readlines()
     salary = 0
+    my_list = []
     for line in content:
         my_list = list(line.split())
         salary += float(my_list[1])
