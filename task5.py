@@ -8,9 +8,8 @@ with open('task5.txt', 'w', encoding="utf-8") as f_obj:
 
 with open('task5.txt', 'r', encoding="utf-8") as f_obj:
     content = f_obj.read()
-    print(content)
     my_list = content.split()
     result = 0
     for el in my_list:
         result += int(el)
-    print("Сумма чисел в файле =", result)
+    print(f'Сумма чисел в файле = {result}')

@@ -14,4 +14,4 @@ with open("task3.txt", "r", encoding="utf-8") as read_file:
         salary += float(my_list[1])
         if float(my_list[1]) < 20000:
             print(f' Зарплата меньше 20 тыс у {my_list[0]}a')
-    print(f'Средняя величина дохода = {salary / 10}')
+    print(f'Средняя величина дохода = {salary / len(content)}')
